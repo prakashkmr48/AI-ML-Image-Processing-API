@@ -25,8 +25,7 @@ transform = transforms.Compose([
 st.title("AI/ML Image Processing App")
 st.write("Upload an image and get predictions using a pre-trained ResNet model.")
 
-# Add API Documentation Link
-st.markdown("### 📜 [View API Documentation](https://bb87-103-108-4-243.ngrok-free.app/docs)")
+
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
