@@ -26,7 +26,8 @@ st.title("AI/ML Image Processing App")
 st.write("Upload an image and get predictions using a pre-trained ResNet model.")
 
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
-
+st.markdown("### 📜 FastAPI Documentation")
+st.components.v1.iframe("http://127.0.0.1:8000/docs", height=600, scrolling=True)
 if uploaded_file is not None:
     # Load and preprocess image
     image = Image.open(uploaded_file)
